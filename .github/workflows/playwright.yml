@@ -16,6 +16,7 @@ jobs:
         node-version: '14.x'
         
     - name: Install dependencies
+<<<<<<< HEAD
       run: npm install
 
     - name: Install Playwright Browsers
@@ -24,6 +25,9 @@ jobs:
     - uses: azure/login@v2
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
+=======
+      run: npm ci
+>>>>>>> bbf8207876b5c8ba43081bb256401036960b2c60
       
     - uses: azure/login@v2
       with:
